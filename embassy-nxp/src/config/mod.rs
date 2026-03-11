@@ -1,4 +1,5 @@
-#[cfg(feature = "mimxrt1011")]
+#[cfg(feature = "_main_clock_init")]
+#[cfg_attr(lpc55, path = "./lpc55.rs")]
 #[cfg_attr(feature = "mimxrt1011", path = "./mimxrt1011.rs")]
 pub(crate) mod init;
 

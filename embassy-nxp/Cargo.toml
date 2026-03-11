@@ -87,6 +87,6 @@ _main_clock_init = []
 
 #! ### Chip selection features
 lpc55-core0 = ["nxp-pac/lpc55s69_cm33_core0"]
-lpc55s16 = ["nxp-pac/lpc55s16", "_lpc55"]
+lpc55s16 = ["nxp-pac/lpc55s16", "_main_clock_init", "_lpc55"]
 mimxrt1011 = ["nxp-pac/mimxrt1011", "_rt1xxx", "_main_clock_init", "dep:imxrt-rt"]
 mimxrt1062 = ["nxp-pac/mimxrt1062", "_rt1xxx", "dep:imxrt-rt"]
