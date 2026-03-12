@@ -82,8 +82,11 @@ _lpc55 = []
 # A timer driver is enabled.
 _time_driver = ["dep:embassy-time-driver", "dep:embassy-time-queue-utils"]
 
+# Main clock initialization is enabled.
+_main_clock_init = []
+
 #! ### Chip selection features
 lpc55-core0 = ["nxp-pac/lpc55s69_cm33_core0"]
 lpc55s16 = ["nxp-pac/lpc55s16", "_lpc55"]
-mimxrt1011 = ["nxp-pac/mimxrt1011", "_rt1xxx", "dep:imxrt-rt"]
+mimxrt1011 = ["nxp-pac/mimxrt1011", "_rt1xxx", "_main_clock_init", "dep:imxrt-rt"]
 mimxrt1062 = ["nxp-pac/mimxrt1062", "_rt1xxx", "dep:imxrt-rt"]
